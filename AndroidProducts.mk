@@ -15,7 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ginkgo.mk
+    $(LOCAL_DIR)/weeb_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_ginkgo-userdebug
+    weeb_ginkgo-user \
+    weeb_ginkgo-userdebug \
+    weeb_ginkgo-eng
