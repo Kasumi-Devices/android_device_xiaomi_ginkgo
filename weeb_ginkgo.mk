@@ -40,10 +40,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit WeebProjekt stuff
-$(call inherit-product, vendor/weeb/config/common_full_phone.mk)
+$(call inherit-product, vendor/weeb/build/product/weeb_product.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-
+WITH_GMS := true
 # Device identifiers
 PRODUCT_NAME := weeb_ginkgo
 PRODUCT_DEVICE := ginkgo
