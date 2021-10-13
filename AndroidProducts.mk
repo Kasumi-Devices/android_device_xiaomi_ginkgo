@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/weeb_ginkgo.mk
+    $(LOCAL_DIR)/kasumi_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    weeb_ginkgo-user \
-    weeb_ginkgo-userdebug \
-    weeb_ginkgo-eng
+    kasumi_ginkgo-user \
+    kasumi_ginkgo-userdebug \
+    kasumi_ginkgo-eng

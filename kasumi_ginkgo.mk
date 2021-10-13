@@ -39,13 +39,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit WeebProjekt stuff
-$(call inherit-product, vendor/weeb/build/product/weeb_product.mk)
-TARGET_GAPPS_ARCH := arm64
+# Inherit Project Kasumi stuff
+$(call inherit-product, vendor/kasumi/config/common_full_phone.mk)
+
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+
+# Set GApps arch for GApps builds
+TARGET_GAPPS_ARCH := arm64
+
+# Some flags to customize Project Kasumi builds
+KASUMI_SHIP_GSANS := true
+KASUMI_SHIP_LAWNCHAIR := true
+
 # Device identifiers
-PRODUCT_NAME := weeb_ginkgo
+PRODUCT_NAME := kasumi_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
